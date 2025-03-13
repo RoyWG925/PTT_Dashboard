@@ -1,0 +1,161 @@
+2025-03-11 00:19:49,771 - Logging initialized (auto crawler)
+2025-03-11 00:19:49,869 - [NBA] Latest page determined: 6503
+2025-03-11 00:19:49,870 - [NBA] Latest page is 6503.
+2025-03-11 00:19:49,870 - [NBA] Crawling latest page: 6503
+2025-03-11 00:19:50,048 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741582677.A.89A.html
+2025-03-11 00:19:50,205 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741584483.A.492.html
+2025-03-11 00:19:50,269 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741586385.A.97D.html
+2025-03-11 00:19:50,455 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741587924.A.1CB.html
+2025-03-11 00:19:50,707 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741600893.A.50A.html
+2025-03-11 00:19:50,865 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741604760.A.BD0.html
+2025-03-11 00:19:50,933 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741606417.A.CDA.html
+2025-03-11 00:19:51,075 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741607727.A.839.html
+2025-03-11 00:19:51,123 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741613043.A.4D3.html
+2025-03-11 00:19:51,177 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741614000.A.D6C.html
+2025-03-11 00:19:51,248 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741614756.A.F53.html
+2025-03-11 00:19:51,526 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1728456762.A.CB2.html
+2025-03-11 00:19:51,676 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1739793100.A.B43.html
+2025-03-11 00:19:51,815 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741580735.A.53B.html
+2025-03-11 00:19:51,817 - [NBA] Finished crawling page 6503.
+2025-03-11 00:19:51,862 - [Stock] Latest page determined: 8443
+2025-03-11 00:19:51,863 - [Stock] Latest page is 8443.
+2025-03-11 00:19:51,863 - [Stock] Crawling latest page: 8443
+2025-03-11 00:19:53,486 - Duplicate article, skipping: https://www.ptt.cc/bbs/Stock/M.1719872231.A.9BA.html
+2025-03-11 00:19:53,655 - Duplicate article, skipping: https://www.ptt.cc/bbs/Stock/M.1730738309.A.238.html
+2025-03-11 00:19:53,707 - Duplicate article, skipping: https://www.ptt.cc/bbs/Stock/M.1739730011.A.267.html
+2025-03-11 00:19:54,058 - Duplicate article, skipping: https://www.ptt.cc/bbs/Stock/M.1741586415.A.C5D.html
+2025-03-11 00:19:54,059 - [Stock] Finished crawling page 8443.
+2025-03-11 00:19:54,060 - Sleeping for 2 minutes before next crawl...
+2025-03-11 01:01:38,013 - Logging initialized (auto crawler)
+2025-03-11 01:01:38,094 - [NBA] Latest page determined: 6503
+2025-03-11 01:01:38,096 - [NBA] Latest page is 6503.
+2025-03-11 01:01:38,096 - [NBA] Crawling latest page: 6503
+2025-03-11 01:01:38,272 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741582677.A.89A.html
+2025-03-11 01:01:38,425 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741584483.A.492.html
+2025-03-11 01:01:38,486 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741586385.A.97D.html
+2025-03-11 01:01:38,635 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741587924.A.1CB.html
+2025-03-11 01:01:38,887 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741600893.A.50A.html
+2025-03-11 01:01:39,025 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741604760.A.BD0.html
+2025-03-11 01:01:39,122 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741606417.A.CDA.html
+2025-03-11 01:01:39,244 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741607727.A.839.html
+2025-03-11 01:01:39,293 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741613043.A.4D3.html
+2025-03-11 01:01:39,352 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741614000.A.D6C.html
+2025-03-11 01:01:39,460 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741614756.A.F53.html
+2025-03-11 01:01:39,512 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741617959.A.71B.html
+2025-03-11 01:01:39,686 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741618848.A.87C.html
+2025-03-11 01:01:39,733 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741619244.A.3C9.html
+2025-03-11 01:01:39,773 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741622352.A.01B.html
+2025-03-11 01:01:39,886 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1728456762.A.CB2.html
+2025-03-11 01:01:40,044 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1739793100.A.B43.html
+2025-03-11 01:01:40,184 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741580735.A.53B.html
+2025-03-11 01:01:40,186 - [NBA] Finished crawling page 6503.
+2025-03-11 01:01:40,221 - [Stock] Latest page determined: 8444
+2025-03-11 01:01:40,221 - [Stock] Latest page is 8444.
+2025-03-11 01:01:40,221 - [Stock] Crawling latest page: 8444
+2025-03-11 01:01:40,456 - Duplicate article, skipping: https://www.ptt.cc/bbs/Stock/M.1719872231.A.9BA.html
+2025-03-11 01:01:40,574 - Duplicate article, skipping: https://www.ptt.cc/bbs/Stock/M.1730738309.A.238.html
+2025-03-11 01:01:40,659 - Duplicate article, skipping: https://www.ptt.cc/bbs/Stock/M.1739730011.A.267.html
+2025-03-11 01:01:41,058 - Duplicate article, skipping: https://www.ptt.cc/bbs/Stock/M.1741586415.A.C5D.html
+2025-03-11 01:01:41,059 - [Stock] Finished crawling page 8444.
+2025-03-11 01:01:41,059 - Sleeping for 2 minutes before next crawl...
+2025-03-11 01:03:41,109 - [NBA] Latest page determined: 6503
+2025-03-11 01:03:41,109 - [NBA] Latest page is 6503.
+2025-03-11 01:03:41,109 - [NBA] Crawling latest page: 6503
+2025-03-11 01:03:41,310 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741582677.A.89A.html
+2025-03-11 01:03:41,520 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741584483.A.492.html
+2025-03-11 01:03:41,574 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741586385.A.97D.html
+2025-03-11 01:03:41,780 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741587924.A.1CB.html
+2025-03-11 01:03:42,029 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741600893.A.50A.html
+2025-03-11 01:03:42,230 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741604760.A.BD0.html
+2025-03-11 01:03:42,352 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741606417.A.CDA.html
+2025-03-11 01:03:42,520 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741607727.A.839.html
+2025-03-11 01:03:42,618 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741613043.A.4D3.html
+2025-03-11 01:03:42,670 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741614000.A.D6C.html
+2025-03-11 01:03:42,727 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741614756.A.F53.html
+2025-03-11 01:03:42,830 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741617959.A.71B.html
+2025-03-11 01:03:42,959 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741618848.A.87C.html
+2025-03-11 01:03:43,002 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741619244.A.3C9.html
+2025-03-11 01:03:43,105 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741622352.A.01B.html
+2025-03-11 01:03:43,211 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1728456762.A.CB2.html
+2025-03-11 01:03:43,380 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1739793100.A.B43.html
+2025-03-11 01:03:43,511 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741580735.A.53B.html
+2025-03-11 01:03:43,512 - [NBA] Finished crawling page 6503.
+2025-03-11 01:03:43,555 - [Stock] Latest page determined: 8444
+2025-03-11 01:03:43,555 - [Stock] Latest page is 8444.
+2025-03-11 01:03:43,555 - [Stock] Crawling latest page: 8444
+2025-03-11 01:03:43,707 - Duplicate article, skipping: https://www.ptt.cc/bbs/Stock/M.1741624682.A.F77.html
+2025-03-11 01:03:43,753 - Duplicate article, skipping: https://www.ptt.cc/bbs/Stock/M.1741625841.A.005.html
+2025-03-11 01:03:43,960 - Duplicate article, skipping: https://www.ptt.cc/bbs/Stock/M.1719872231.A.9BA.html
+2025-03-11 01:03:44,150 - Duplicate article, skipping: https://www.ptt.cc/bbs/Stock/M.1730738309.A.238.html
+2025-03-11 01:03:44,198 - Duplicate article, skipping: https://www.ptt.cc/bbs/Stock/M.1739730011.A.267.html
+2025-03-11 01:03:44,584 - Duplicate article, skipping: https://www.ptt.cc/bbs/Stock/M.1741586415.A.C5D.html
+2025-03-11 01:03:44,585 - [Stock] Finished crawling page 8444.
+2025-03-11 01:03:44,587 - Sleeping for 2 minutes before next crawl...
+2025-03-11 01:05:44,639 - [NBA] Latest page determined: 6503
+2025-03-11 01:05:44,639 - [NBA] Latest page is 6503.
+2025-03-11 01:05:44,640 - [NBA] Crawling latest page: 6503
+2025-03-11 01:05:44,814 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741582677.A.89A.html
+2025-03-11 01:05:44,975 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741584483.A.492.html
+2025-03-11 01:05:45,039 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741586385.A.97D.html
+2025-03-11 01:05:45,225 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741587924.A.1CB.html
+2025-03-11 01:05:45,446 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741600893.A.50A.html
+2025-03-11 01:05:45,585 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741604760.A.BD0.html
+2025-03-11 01:05:45,645 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741606417.A.CDA.html
+2025-03-11 01:05:45,774 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741607727.A.839.html
+2025-03-11 01:05:45,823 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741613043.A.4D3.html
+2025-03-11 01:05:45,874 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741614000.A.D6C.html
+2025-03-11 01:05:45,949 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741614756.A.F53.html
+2025-03-11 01:05:46,004 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741617959.A.71B.html
+2025-03-11 01:05:46,135 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741618848.A.87C.html
+2025-03-11 01:05:46,196 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741619244.A.3C9.html
+2025-03-11 01:05:46,245 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741622352.A.01B.html
+2025-03-11 01:05:46,366 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1728456762.A.CB2.html
+2025-03-11 01:05:46,515 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1739793100.A.B43.html
+2025-03-11 01:05:46,644 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741580735.A.53B.html
+2025-03-11 01:05:46,646 - [NBA] Finished crawling page 6503.
+2025-03-11 01:05:46,698 - [Stock] Latest page determined: 8444
+2025-03-11 01:05:46,698 - [Stock] Latest page is 8444.
+2025-03-11 01:05:46,698 - [Stock] Crawling latest page: 8444
+2025-03-11 01:05:46,787 - Duplicate article, skipping: https://www.ptt.cc/bbs/Stock/M.1741624682.A.F77.html
+2025-03-11 01:05:46,838 - Duplicate article, skipping: https://www.ptt.cc/bbs/Stock/M.1741625841.A.005.html
+2025-03-11 01:05:46,881 - Duplicate article, skipping: https://www.ptt.cc/bbs/Stock/M.1741625915.A.558.html
+2025-03-11 01:05:47,005 - Duplicate article, skipping: https://www.ptt.cc/bbs/Stock/M.1719872231.A.9BA.html
+2025-03-11 01:05:47,135 - Duplicate article, skipping: https://www.ptt.cc/bbs/Stock/M.1730738309.A.238.html
+2025-03-11 01:05:47,184 - Duplicate article, skipping: https://www.ptt.cc/bbs/Stock/M.1739730011.A.267.html
+2025-03-11 01:05:47,533 - Duplicate article, skipping: https://www.ptt.cc/bbs/Stock/M.1741586415.A.C5D.html
+2025-03-11 01:05:47,535 - [Stock] Finished crawling page 8444.
+2025-03-11 01:05:47,536 - Sleeping for 2 minutes before next crawl...
+2025-03-11 01:07:47,590 - [NBA] Latest page determined: 6503
+2025-03-11 01:07:47,590 - [NBA] Latest page is 6503.
+2025-03-11 01:07:47,590 - [NBA] Crawling latest page: 6503
+2025-03-11 01:07:47,761 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741582677.A.89A.html
+2025-03-11 01:07:47,932 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741584483.A.492.html
+2025-03-11 01:07:48,002 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741586385.A.97D.html
+2025-03-11 01:07:48,201 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741587924.A.1CB.html
+2025-03-11 01:07:48,399 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741600893.A.50A.html
+2025-03-11 01:07:48,570 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741604760.A.BD0.html
+2025-03-11 01:07:48,638 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741606417.A.CDA.html
+2025-03-11 01:07:48,760 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741607727.A.839.html
+2025-03-11 01:07:48,815 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741613043.A.4D3.html
+2025-03-11 01:07:48,894 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741614000.A.D6C.html
+2025-03-11 01:07:48,969 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741614756.A.F53.html
+2025-03-11 01:07:49,025 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741617959.A.71B.html
+2025-03-11 01:07:49,150 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741618848.A.87C.html
+2025-03-11 01:07:49,195 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741619244.A.3C9.html
+2025-03-11 01:07:49,238 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741622352.A.01B.html
+2025-03-11 01:07:49,351 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1728456762.A.CB2.html
+2025-03-11 01:07:49,510 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1739793100.A.B43.html
+2025-03-11 01:07:49,680 - Duplicate article, skipping: https://www.ptt.cc/bbs/NBA/M.1741580735.A.53B.html
+2025-03-11 01:07:49,681 - [NBA] Finished crawling page 6503.
+2025-03-11 01:07:49,726 - [Stock] Latest page determined: 8444
+2025-03-11 01:07:49,727 - [Stock] Latest page is 8444.
+2025-03-11 01:07:49,727 - [Stock] Crawling latest page: 8444
+2025-03-11 01:07:49,807 - Duplicate article, skipping: https://www.ptt.cc/bbs/Stock/M.1741624682.A.F77.html
+2025-03-11 01:07:49,861 - Duplicate article, skipping: https://www.ptt.cc/bbs/Stock/M.1741625841.A.005.html
+2025-03-11 01:07:49,907 - Duplicate article, skipping: https://www.ptt.cc/bbs/Stock/M.1741625915.A.558.html
+2025-03-11 01:07:50,080 - Duplicate article, skipping: https://www.ptt.cc/bbs/Stock/M.1719872231.A.9BA.html
+2025-03-11 01:07:50,211 - Duplicate article, skipping: https://www.ptt.cc/bbs/Stock/M.1730738309.A.238.html
+2025-03-11 01:07:50,262 - Duplicate article, skipping: https://www.ptt.cc/bbs/Stock/M.1739730011.A.267.html
+2025-03-11 01:07:50,625 - Duplicate article, skipping: https://www.ptt.cc/bbs/Stock/M.1741586415.A.C5D.html
+2025-03-11 01:07:50,626 - [Stock] Finished crawling page 8444.
+2025-03-11 01:07:50,626 - Sleeping for 2 minutes before next crawl...
