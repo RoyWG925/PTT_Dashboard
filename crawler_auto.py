@@ -13,7 +13,8 @@ from bs4 import BeautifulSoup
 # 我們將對 BOARD_CONFIG 裡的每個看板，每次只抓最新一頁
 BOARD_CONFIG = [
     {"board": "NBA"},
-    {"board": "Stock"}
+    {"board": "Stock"},
+    {"board": "Gossiping"}
 ]
 
 SLEEP_INTERVAL = 120  # 每 2 分鐘抓一次

@@ -12340,3 +12340,75 @@
 2025-03-11 01:24:49,790 - Updated 200/272 push comments.
 2025-03-11 01:24:49,822 - Done updating push_comments.
 2025-03-11 01:24:49,822 - Post-sentiment batch analysis done.
+2025-03-20 12:15:56,590 - Logging initialized (post-sentiment, batch mode)
+2025-03-20 12:16:20,321 - Sentiment analyzer initialized (GPU, batch mode)
+2025-03-20 12:16:20,380 - Found 44 articles to analyze (title & content) that haven't been updated.
+2025-03-20 12:16:20,380 - Start batch inference for titles...
+2025-03-20 12:16:21,159 - Start batch inference for contents...
+2025-03-20 12:16:22,215 - Done updating sentiments (title & content).
+2025-03-20 12:16:22,533 - Found 2517 push comments to analyze.
+2025-03-20 12:16:22,533 - Prepared 100/2517 push comments for analysis.
+2025-03-20 12:16:22,533 - Prepared 200/2517 push comments for analysis.
+2025-03-20 12:16:22,533 - Prepared 300/2517 push comments for analysis.
+2025-03-20 12:16:22,533 - Prepared 400/2517 push comments for analysis.
+2025-03-20 12:16:22,533 - Prepared 500/2517 push comments for analysis.
+2025-03-20 12:16:22,533 - Prepared 600/2517 push comments for analysis.
+2025-03-20 12:16:22,533 - Prepared 700/2517 push comments for analysis.
+2025-03-20 12:16:22,533 - Prepared 800/2517 push comments for analysis.
+2025-03-20 12:16:22,533 - Prepared 900/2517 push comments for analysis.
+2025-03-20 12:16:22,533 - Prepared 1000/2517 push comments for analysis.
+2025-03-20 12:16:22,533 - Prepared 1100/2517 push comments for analysis.
+2025-03-20 12:16:22,533 - Prepared 1200/2517 push comments for analysis.
+2025-03-20 12:16:22,533 - Prepared 1300/2517 push comments for analysis.
+2025-03-20 12:16:22,533 - Prepared 1400/2517 push comments for analysis.
+2025-03-20 12:16:22,533 - Prepared 1500/2517 push comments for analysis.
+2025-03-20 12:16:22,533 - Prepared 1600/2517 push comments for analysis.
+2025-03-20 12:16:22,533 - Prepared 1700/2517 push comments for analysis.
+2025-03-20 12:16:22,533 - Prepared 1800/2517 push comments for analysis.
+2025-03-20 12:16:22,533 - Prepared 1900/2517 push comments for analysis.
+2025-03-20 12:16:22,533 - Prepared 2000/2517 push comments for analysis.
+2025-03-20 12:16:22,533 - Prepared 2100/2517 push comments for analysis.
+2025-03-20 12:16:22,533 - Prepared 2200/2517 push comments for analysis.
+2025-03-20 12:16:22,533 - Prepared 2300/2517 push comments for analysis.
+2025-03-20 12:16:22,533 - Prepared 2400/2517 push comments for analysis.
+2025-03-20 12:16:22,533 - Prepared 2500/2517 push comments for analysis.
+2025-03-20 12:16:22,534 - Start batch inference for push_comments...
+2025-03-20 12:16:38,410 - Updated 100/2517 push comments.
+2025-03-20 12:16:38,460 - Updated 200/2517 push comments.
+2025-03-20 12:16:38,509 - Updated 300/2517 push comments.
+2025-03-20 12:16:38,558 - Updated 400/2517 push comments.
+2025-03-20 12:16:38,609 - Updated 500/2517 push comments.
+2025-03-20 12:16:38,660 - Updated 600/2517 push comments.
+2025-03-20 12:16:38,709 - Updated 700/2517 push comments.
+2025-03-20 12:16:38,762 - Updated 800/2517 push comments.
+2025-03-20 12:16:38,810 - Updated 900/2517 push comments.
+2025-03-20 12:16:38,862 - Updated 1000/2517 push comments.
+2025-03-20 12:16:38,912 - Updated 1100/2517 push comments.
+2025-03-20 12:16:38,957 - Updated 1200/2517 push comments.
+2025-03-20 12:16:39,001 - Updated 1300/2517 push comments.
+2025-03-20 12:16:39,043 - Updated 1400/2517 push comments.
+2025-03-20 12:16:39,089 - Updated 1500/2517 push comments.
+2025-03-20 12:16:39,139 - Updated 1600/2517 push comments.
+2025-03-20 12:16:39,180 - Updated 1700/2517 push comments.
+2025-03-20 12:16:39,223 - Updated 1800/2517 push comments.
+2025-03-20 12:16:39,271 - Updated 1900/2517 push comments.
+2025-03-20 12:16:39,315 - Updated 2000/2517 push comments.
+2025-03-20 12:16:39,358 - Updated 2100/2517 push comments.
+2025-03-20 12:16:39,399 - Updated 2200/2517 push comments.
+2025-03-20 12:16:39,438 - Updated 2300/2517 push comments.
+2025-03-20 12:16:39,482 - Updated 2400/2517 push comments.
+2025-03-20 12:16:39,526 - Updated 2500/2517 push comments.
+2025-03-20 12:16:39,536 - Done updating push_comments.
+2025-03-20 12:16:39,536 - Post-sentiment batch analysis done.
+2025-03-20 12:16:39,536 - 等待 30 分鐘後重新執行...
+2025-03-20 12:26:22,527 - Logging initialized (post-sentiment, batch mode)
+2025-03-20 12:26:30,142 - Sentiment analyzer initialized (GPU, batch mode)
+2025-03-20 12:26:30,191 - Found 5 articles to analyze (title & content) that haven't been updated.
+2025-03-20 12:26:30,191 - Start batch inference for titles...
+2025-03-20 12:26:30,494 - Start batch inference for contents...
+2025-03-20 12:26:31,344 - Done updating sentiments (title & content).
+2025-03-20 12:26:31,417 - Found 2 push comments to analyze.
+2025-03-20 12:26:31,417 - Start batch inference for push_comments...
+2025-03-20 12:26:31,473 - Done updating push_comments.
+2025-03-20 12:26:31,473 - Post-sentiment batch analysis done.
+2025-03-20 12:26:31,473 - 等待 30 分鐘後重新執行...
