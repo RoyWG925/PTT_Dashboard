@@ -7,13 +7,8 @@ from scipy.stats import pearsonr, spearmanr
 import statsmodels.api as sm
 from statsmodels.formula.api import ols
 
-# 新增 WordCloud 套件
-from wordcloud import WordCloud
-import matplotlib.pyplot as plt
-import numpy as np
-
 #############################
-# 建立 SQLAlchemy engine (改為 SQLite)
+# 建立 SQLAlchemy engine (SQLite)
 #############################
 def get_engine():
     # 假設 ptt_data.db 在與程式碼相同的目錄下
@@ -81,16 +76,6 @@ def fetch_articles(board_filter=None):
     df = pd.read_sql_query(sql, engine)
     engine.dispose()
     return df
-
-#############################
-# 文字雲
-#############################
-def generate_wordcloud(text, font_path="Noto_Sans_TC.ttf"):  # 修改為相對路徑
-    wordcloud = WordCloud(font_path=font_path,
-                          width=800, height=400, 
-                          background_color="white",
-                          max_words=200, colormap="viridis").generate(text)
-    return wordcloud
 
 #############################
 # 星等分佈 (1~5)
@@ -227,7 +212,8 @@ def get_data_for_analysis(board_filter=None):
 #############################
 st.set_page_config(page_title="PTT Dashboard (SQLite)", layout="wide")
 
-menu = st.sidebar.radio("功能選單", ["文章列表", "資料視覺化", "文字雲", "時間序列", "統計分析"], index=0)
+# 移除 "文字雲" 選項
+menu = st.sidebar.radio("功能選單", ["文章列表", "資料視覺化", "時間序列", "統計分析"], index=0)
 
 if st.sidebar.button("刷新資料"):
     st.experimental_rerun()
@@ -347,20 +333,6 @@ elif menu == "資料視覺化":
     else:
         fig_push = px.bar(df_push, x="star_int", y="cnt", title="推文星等分佈", labels={"star_int":"星等", "cnt":"數量"})
         st.plotly_chart(fig_push, use_container_width=True)
-
-elif menu == "文字雲":
-    st.title("文字雲")
-    board_selection = st.sidebar.selectbox("篩選看板", ["All", "Gossiping", "NBA", "Stock"])
-    df_articles = fetch_articles(board_filter=board_selection)
-    if df_articles.empty:
-        st.write("無文章可產生文字雲")
-    else:
-        text_all = " ".join(df_articles["title"].fillna("").tolist())
-        wordcloud = generate_wordcloud(text_all)
-        fig, ax = plt.subplots(figsize=(10,5))
-        ax.imshow(wordcloud, interpolation='bilinear')
-        ax.axis("off")
-        st.pyplot(fig)
 
 elif menu == "時間序列":
     st.title("時間序列：情緒星等 (1~5) vs 時間")
