@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import re
 import time
 import logging
-import psycopg2
+import sqlite3
 import sys
 
 # ----------------------------
@@ -24,13 +24,9 @@ except Exception as e:
     logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
 
 # ----------------------------
-# PostgreSQL 連線參數
+# SQLite 資料庫檔案路徑
 # ----------------------------
-PG_HOST = "localhost"
-PG_PORT = 5432
-PG_DBNAME = "ptt_db"
-PG_USER = "ptt_user"
-PG_PASSWORD = "ptt_password"
+SQLITE_DB_PATH = "ptt_data.db"
 
 # ----------------------------
 # 初始化情緒分析模型 (使用 GPU, 可改 device=-1 用 CPU)
@@ -49,14 +45,8 @@ except Exception as e:
     logging.error(f"Model initialization failed: {e}")
     sys.exit(1)
 
-def get_pg_connection():
-    return psycopg2.connect(
-        host=PG_HOST,
-        port=PG_PORT,
-        dbname=PG_DBNAME,
-        user=PG_USER,
-        password=PG_PASSWORD
-    )
+def get_sqlite_connection():
+    return sqlite3.connect(SQLITE_DB_PATH)
 
 # ----------------------------
 # star_label 轉換為情緒
@@ -74,44 +64,45 @@ def star_label_to_sentiment(star_label: str) -> str:
 # 確保需要的欄位已存在
 # ----------------------------
 def ensure_db_columns():
-    conn = get_pg_connection()
+    conn = get_sqlite_connection()
     cur = conn.cursor()
+    # SQLite 不支援直接檢查欄位是否存在，因此使用 try-except
     try:
         cur.execute("ALTER TABLE sentiments ADD COLUMN title_star_label TEXT")
-    except psycopg2.errors.DuplicateColumn:
-        conn.rollback()
+    except sqlite3.OperationalError:
+        pass  # 如果欄位已存在，忽略錯誤
     try:
         cur.execute("ALTER TABLE sentiments ADD COLUMN title_sentiment TEXT")
-    except psycopg2.errors.DuplicateColumn:
-        conn.rollback()
+    except sqlite3.OperationalError:
+        pass
     try:
-        cur.execute("ALTER TABLE sentiments ADD COLUMN title_score DOUBLE PRECISION")
-    except psycopg2.errors.DuplicateColumn:
-        conn.rollback()
+        cur.execute("ALTER TABLE sentiments ADD COLUMN title_score REAL")  # DOUBLE PRECISION -> REAL
+    except sqlite3.OperationalError:
+        pass
     try:
         cur.execute("ALTER TABLE sentiments ADD COLUMN content_star_label TEXT")
-    except psycopg2.errors.DuplicateColumn:
-        conn.rollback()
+    except sqlite3.OperationalError:
+        pass
     try:
         cur.execute("ALTER TABLE sentiments ADD COLUMN content_sentiment TEXT")
-    except psycopg2.errors.DuplicateColumn:
-        conn.rollback()
+    except sqlite3.OperationalError:
+        pass
     try:
-        cur.execute("ALTER TABLE sentiments ADD COLUMN content_score DOUBLE PRECISION")
-    except psycopg2.errors.DuplicateColumn:
-        conn.rollback()
+        cur.execute("ALTER TABLE sentiments ADD COLUMN content_score REAL")
+    except sqlite3.OperationalError:
+        pass
     try:
         cur.execute("ALTER TABLE push_comments ADD COLUMN push_star_label TEXT")
-    except psycopg2.errors.DuplicateColumn:
-        conn.rollback()
+    except sqlite3.OperationalError:
+        pass
     try:
         cur.execute("ALTER TABLE push_comments ADD COLUMN push_sentiment TEXT")
-    except psycopg2.errors.DuplicateColumn:
-        conn.rollback()
+    except sqlite3.OperationalError:
+        pass
     try:
-        cur.execute("ALTER TABLE push_comments ADD COLUMN push_score DOUBLE PRECISION")
-    except psycopg2.errors.DuplicateColumn:
-        conn.rollback()
+        cur.execute("ALTER TABLE push_comments ADD COLUMN push_score REAL")
+    except sqlite3.OperationalError:
+        pass
     conn.commit()
     cur.close()
     conn.close()
@@ -139,7 +130,7 @@ def batch_inference(texts, batch_size=16):
 # 分析 sentiments (title, content) in batch
 # ----------------------------
 def analyze_sentiments_main():
-    conn = get_pg_connection()
+    conn = get_sqlite_connection()
     cur = conn.cursor()
     # 只取尚未更新情緒的文章，避免重複分析
     cur.execute("SELECT id, title, content FROM sentiments WHERE title_star_label IS NULL OR content_star_label IS NULL ORDER BY id ASC")
@@ -176,13 +167,13 @@ def analyze_sentiments_main():
         try:
             update_sql = """
             UPDATE sentiments
-            SET title_star_label=%s,
-                title_sentiment=%s,
-                title_score=%s,
-                content_star_label=%s,
-                content_sentiment=%s,
-                content_score=%s
-            WHERE id=%s
+            SET title_star_label = ?,
+                title_sentiment = ?,
+                title_score = ?,
+                content_star_label = ?,
+                content_sentiment = ?,
+                content_score = ?
+            WHERE id = ?
             """
             cur.execute(update_sql, (
                 title_star, title_sent, title_score,
@@ -202,7 +193,7 @@ def analyze_sentiments_main():
 # 分析 push_comments in batch
 # ----------------------------
 def analyze_push_comments():
-    conn = get_pg_connection()
+    conn = get_sqlite_connection()
     cur = conn.cursor()
     # 只選擇尚未更新推文情緒的資料
     cur.execute("SELECT id, push_content FROM push_comments WHERE push_star_label IS NULL ORDER BY id ASC")
@@ -231,10 +222,10 @@ def analyze_push_comments():
         try:
             update_sql = """
             UPDATE push_comments
-            SET push_star_label=%s,
-                push_sentiment=%s,
-                push_score=%s
-            WHERE id=%s
+            SET push_star_label = ?,
+                push_sentiment = ?,
+                push_score = ?
+            WHERE id = ?
             """
             cur.execute(update_sql, (star_label, sentiment_label, score, push_id))
         except Exception as e:
@@ -253,10 +244,8 @@ def main():
     logging.info("Post-sentiment batch analysis done.")
 
 if __name__ == "__main__":
-    while True:
-        try:
-            main()
-        except Exception as e:
-            logging.error(f"Main error: {e}")
-        logging.info("等待 30 分鐘後重新執行...")
-        time.sleep(1800)  # 暫停 1800 秒，即半小時
+    try:
+        main()
+    except Exception as e:
+        logging.error(f"Main error: {e}")
+        sys.exit(1)

@@ -12412,3 +12412,12 @@
 2025-03-20 12:26:31,473 - Done updating push_comments.
 2025-03-20 12:26:31,473 - Post-sentiment batch analysis done.
 2025-03-20 12:26:31,473 - 等待 30 分鐘後重新執行...
+2025-03-31 16:28:55,411 - Logging initialized (post-sentiment, batch mode)
+2025-03-31 16:29:03,260 - Sentiment analyzer initialized (GPU, batch mode)
+2025-03-31 16:29:03,554 - Found 10 articles to analyze (title & content) that haven't been updated.
+2025-03-31 16:29:03,554 - Start batch inference for titles...
+2025-03-31 16:29:04,220 - Start batch inference for contents...
+2025-03-31 16:29:05,914 - Done updating sentiments (title & content).
+2025-03-31 16:29:06,121 - Found 0 push comments to analyze.
+2025-03-31 16:29:06,121 - All push comments already analyzed.
+2025-03-31 16:29:06,122 - Post-sentiment batch analysis done.
